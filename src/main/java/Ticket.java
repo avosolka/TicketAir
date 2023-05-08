@@ -30,6 +30,7 @@ public class Ticket implements Comparable<Ticket> {
     public String getTo() {
         return to;
     }
+
     public int getDuration() {
         return duration;
     }
@@ -37,10 +38,10 @@ public class Ticket implements Comparable<Ticket> {
 
     @Override
     public int compareTo(Ticket o) {
-        if(price < o.getPrice()){
+        if (price < o.getPrice()) {
             return -1;
         }
-        if(price> o.getPrice()) {
+        if (price > o.getPrice()) {
             return 1;
         }
         return 0;
